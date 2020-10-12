@@ -1,0 +1,34 @@
+Name: Zeyu Wang
+Student ID:1672-6556-80
+
+I wrote a friend recommendation system based on TCP and UDP.
+
+Code files:
+serverA.cpp:	Source code of serverA
+serverB.cpp:	Source code of serverB
+servermain.cpp:	Source code of mainserver
+client.cpp:	Source code of client
+
+Messages:
+Main server sends to server A/B:
+struct MainQuery {
+	int type;
+	char country[NAMELEN];
+	int id;
+};
+Server A/B send country list to main server:
+struct ReplyMain {
+	int count;
+	char countries[10][NAMELEN];
+};
+Client send to main server:
+struct QueryMain {
+	char country[NAMELEN];
+	int id;
+};
+Server A/B reply main server and main server reply to client:
+char msg[MAXBUFLEN]
+
+
+Reused Code:
+Code snippets from Beej’s socket programming tutorial which marked in source code.
