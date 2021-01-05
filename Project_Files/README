@@ -1,0 +1,36 @@
+Name: Zeyu Wang
+Student ID:1672-6556-80
+
+In this project, I implemented a friend recommendation system to recursively receive and reply to users who want to follow new friends based on TCP and UDP protocols. In order to store a large amount of user data from the Facebook social network, I designed a client-server distributed system that included one main server and two corresponding backend servers. Backend Server A is able to store the user data of Canada and the US, while backend server B may store the data of Europe. Ideally, whenever the main server receives a user query to obtain friend recommendations, the backend server will search through its local database, generate new friend information associated with the query, and get back to the main server with related information. After that, the main server will then reply to the user's query and thus conclude the full process of information exchange.
+
+For simplicity purposes, user data of backend servers are stored in data1.txt and data2.txt respectively.
+
+Code files:
+serverA.cpp:	Source code of serverA
+serverB.cpp:	Source code of serverB
+servermain.cpp:	Source code of mainserver
+client.cpp:	Source code of client
+
+Messages:
+Main server sends to server A/B:
+struct MainQuery {
+	int type;
+	char country[NAMELEN];
+	int id;
+};
+Server A/B send country list to main server:
+struct ReplyMain {
+	int count;
+	char countries[10][NAMELEN];
+};
+Client send to main server:
+struct QueryMain {
+	char country[NAMELEN];
+	int id;
+};
+Server A/B reply main server and main server reply to client:
+char msg[MAXBUFLEN]
+
+
+Reused Code:
+Code snippets from Beej’s socket programming tutorial which marked in source code.
