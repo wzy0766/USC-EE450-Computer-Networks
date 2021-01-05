@@ -23,4 +23,4 @@ There is a total of 5 communication end-points:
 * **Backend Server A & B:** Generated the new friend based on the query.
 * **User Data:** Stored as data1.txt and data2.txt in Back-end servers' local file system.
 
-<p align="center"><img src="img/Data_Structure.png" alt="Data_Structure" width="500" /></p>
+<p align="center"><img src="img/Data_Structure.png" alt="Data_Structure" width="800" /></p>
