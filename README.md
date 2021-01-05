@@ -11,7 +11,7 @@ In this project, I implemented a customized social recommendation system based o
 
 ### Simple Demo
 
-<p align="center"><img src="img/Demo.gif" alt="Demo" width="500" /></p>
+<p align="center"><img src="img/Demo.gif" alt="Demo" width="800" /></p>
 
 ---
 
